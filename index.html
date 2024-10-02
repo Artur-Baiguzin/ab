@@ -3,85 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <title>Baiguzin A.</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
+
 <body>
-    <table cellspacing="15">
-        <td>
-            <img src="FotoArturBaiguzin.jpg" alt="Моя фотография" width="200" height="250">
-        </td>
-        <td>
-            <h1>Байгузин Артур</h1>
-            <p><em>Я начинающий <strong>Frontent developer</strong></em></p>
-            <p>Я люблю кататьня на сноуборде, и велосипеде</p>
-        </td>
-    </table>
+<div class="container"> 
+     <div class="info">
+        <img class="avatar" src="FotoArturBaiguzin.jpg" alt="Моя фотография" >
 
-    <hr/>
+        <div class="info-text">
+                <h1>Байгузин Артур</h1>
+                <p>Я начинающий <strong>Frontent developer</strong></p>
+                <p>Я люблю кататьcя на сноуборде, и велосипеде</p>
+            
+            <h4 >Мои социальные сети</h4>
+            
+            <a href="https://vk.com/artrur_bayguzin" target="_blank">VKontakte</a>
+            |
+            <a href="https://t.me/arturbaiguzin" target="_blank">Telegramm</a>
+        </div>
+     </div> 
+        
 
-    <h2>Мои социальные сети</h2>
-    <ul>
-        <li><a href="https://vk.com/artrur_bayguzin" target="_blank">VKontakte</a></li>
-    </ul>
+     <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+        <ul class="list">
+            <li>Играть в Доту</li>
+            <li>Ходить в спортзал</li>
+            <li>Кушать шашлыки</li>
+        </ul>
+    </div>   
 
-    <hr>
+    <div class="card bg-green">
+        <h2>Классные фильмы</h2>
+        <ul class="link-list">
+            <li><a href="https://www.kinopoisk.ru/film/819281/">Планета обезьян: Война (2017)</a></li>
+            <li><a href="https://www.kinopoisk.ru/film/1338024/">Планета обезьян: Новое царство (2024)</a></li>
+        </ul>
+    </div>
     
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Играть в Доту</li>
-        <li>Гулять с Людмилой</li>
-        <li>Кушать шашлыки</li>
-    </ol>
-
-    <hr>
-
-    <h2>Связаться со мной</h2>
-<form>
-    <label for="name">Ваше Имя:</label>
-    <input type="text" id="name" placeholder="Введите ваше имя">
-    <br>
-    <label for="mail">Введите вашу почту</label>
-    <input type="text" id="mail" placeholder="Введите вашу почту">
-    <br>
-    <label for="text">Введите сообщение:</label>
-    <br>
-    <textarea name="" id="text"></textarea>
-    <br>
-    <input type="submit" value="Связаться">
-</form>
-
-<hr>
-    <h2>Опыт работы!</h2>
-    <table>
-        <tr>
-            <th>Организация</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-        <tr>
-            <td>ТС Техник</td>
-            <td>механик </td>
-            <td>2016-2019</td>
-        </tr>
-        <tr>
-            <td>UTG</td>
-            <td>Техник B1</td>
-            <td>2019-2023</td>
-        </tr>
-        <tr>
-            <td>А-Техник</td>
-            <td>Инженер</td>
-            <td>2023-2025</td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <h2>Классные фильмы</h2>
-    <a href="kinogo.html " target="_blank">Посмотреть списаок</a> 
-
-   
-
+    <div class="card bg-red">
+        <h2>Опыт работы!</h2>
+        <table class="table">
+            <tr>
+                <td>УАПО</td>
+                <td>Инженер Технолог</td>
+                <td>2014-2016</td>
+            </tr>
+            <tr>
+                <td>ТС Техник</td>
+                <td>механик </td>
+                <td>2016-2019</td>
+            </tr>
+            <tr>
+                <td>UTG</td>
+                <td>Техник B1</td>
+                <td>2019-2023</td>
+            </tr>
+            <tr>
+                <td>А-Техник</td>
+                <td>Инженер</td>
+                <td>2023-2025</td>
+            </tr>
+        </table>
+    </div>
     
+    <footer class="contact">
+        <h2>Связаться со мной</h2>
+        <form>
+            <div class="row">
+                
+                    <div class="form-group">
+                        <label for="name">Ваше Имя:</label>
+                        <input type="text" id="name" placeholder="Введите ваше имя">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mail">Введите вашу почту</label>
+                        <input type="text" id="mail" placeholder="Введите вашу почту">
+                    </div>
+                
+                    
+            </div>
+            
+            <div class="form-group">
+                    <label for="text">Введите сообщение:</label>
+            </div>
+
+            <div class="form-group">
+                    <textarea name="" id="text"></textarea>
+            </div>
+            
+            <div>
+                        <input class="btn" type="submit" value="Связаться">
+            </div>
+                
+         </form>
+    </footer>
+    <div style="margin-bottom: 500px;"></div>
    
+</div>
 </body>
 </html>
